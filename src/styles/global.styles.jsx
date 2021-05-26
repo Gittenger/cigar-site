@@ -9,7 +9,9 @@ ${resetCSS}
 
 body {
 	${({ theme: { css } }) => css.flexCenterCol};
+    justify-content: flex-start;
     font-size: 1.8rem;
+    min-height: 1000px;
  
     background-color: ${({ theme: { colors } }) => colors.primary};
     color:  ${({ theme: { colors } }) => colors.secondary};

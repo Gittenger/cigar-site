@@ -70,6 +70,18 @@ export const TopNavText = styled.p`
 	font-size: calc((var(--scale) * 1.3rem) * var(--globalScale));
 `
 
+export const MainNavText = styled.p`
+	font-family: var(--fontMain);
+	font-weight: 400;
+	text-transform: uppercase;
+	white-space: nowrap;
+	word-spacing: 0.3rem;
+
+	--scale: 1;
+
+	font-size: calc((var(--scale) * 1.3rem) * var(--globalScale));
+`
+
 // EXTENDED TYPOGRAPHY STYLES
 //
 
@@ -77,6 +89,7 @@ export const TComp = {
 	P,
 	H1,
 	TopNavText,
+	MainNavText,
 }
 
 export default TComp
