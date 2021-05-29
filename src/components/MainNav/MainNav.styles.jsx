@@ -20,30 +20,48 @@ export const CenterNavImg = styled.div`
 
 export const NavList = styled.ul`
 	${cssIndex.flexCenter}
+	height: 5.5rem;
 
-	li {
-		margin-left: 1.3rem;
-		margin-right: 1.3rem;
+	& > li {
+		height: 100%;
+		line-height: 5.5rem;
+		margin: auto 1.3rem auto;
 		position: relative;
 
-		ul {
-			position: absolute;
-			visibility: hidden;
-			background: red;
-
-			li {
-				margin-top: 1.5rem;
-				margin-bottom: 1.5rem;
-				white-space: nowrap;
-			}
-		}
-
 		&:hover {
-			color: yellow;
-
 			ul {
 				visibility: visible;
 			}
+		}
+	}
+`
+
+export const NavSubList = styled.ul`
+	position: absolute;
+	visibility: hidden;
+	background: olive;
+	${cssIndex.flexCenterCol}
+	padding: 1.5rem 0 1.5rem;
+
+	&:hover {
+		visibility: visible;
+	}
+
+	li {
+		white-space: nowrap;
+		line-height: normal;
+		width: 17rem;
+
+		a {
+			display: inline-block;
+			padding: 1.5rem;
+			width: 100%;
+			height: 100%;
+		}
+
+		& :hover {
+			color: red;
+			background: white;
 		}
 	}
 `
